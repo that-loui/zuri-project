@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <!-- <link rel="stylesheet" href="/workspace/reset.css"> -->
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/signup.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header class="signup-head">
+        
+        <div class="container">
+                <!-- logo -->
+            <div id="logo">LOGO</div>
+
+            <!-- navbar -->
+            <nav id="main-nav">
+
+            <ul id="nav-menu">
+
+                <li class="nav-menu-item">
+                    <a href="#" class="current">Home</a>
+                </li>
+
+                <li class="nav-menu-item">
+                    <a href="#">About</a>
+                </li>
+
+                <li class="nav-menu-item">
+                    <a href="#">Documentation</a>
+                </li>
+
+                <li class="nav-menu-item">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            </nav>
+
+            <!-- extra buttons -->
+            <div class="sign-up">
+                <a href="sign-in.html" >Sign In</a>
+
+                <a href="sign-up.html">Get Started</a>
+            </div>
+        </div>
+    </header>
+    <!-- sign-up form -->
+    <main>
+        <!-- form header -->
+        <h1>Create A New Account</h1>
+
+        <!-- form -->
+        <form action="./welcome.html" autocomplete="on" method="post">
+            
+                <!-- inputs -->
+            <label for="fname">Enter Full Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="John Bull" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="you@example.com" required>
+
+            <label for="password"> Enter Password:</label>
+            <input type="password" minlength="6" name="password" id="password" placeholder="Enter at least 6 characters" required>
+
+            <!-- Remember me div -->
+            <div class="terms-conds">
+                <div>
+                    <input type="checkbox" name="terms" id="terms">
+                    
+                    <small>Remember me</small>
+                
+                </div>
+
+                <a href="forgetpassword.html">Forgot password?</a>
+            </div>
+           
+                <!-- submit button -->
+            <input type="submit" value="Sign Up" id="login" >
+        </form>
+
+                <!-- extra page info -->
+        <div class="extra-info">
+            <p id="sign-up-p">Already Registered? </p>
+             <a href="/HTML/sign-in.html">Sign in</a>
+        </div>
+    </main>
+
+                <!-- footer -->
+    <!-- <footer>
+        <div>  
+            <p>copyright&copy;Quelea2022</p>
+        </div>
+    </footer> -->
+    <script src="/JS/signup.js"></script>
+</body>
+</html>
