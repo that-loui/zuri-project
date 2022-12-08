@@ -190,3 +190,14 @@
     align-items: center;
     margin-top: 100px;
   }
+
+
+  @media (max-width:768px){
+    body header .container #main-nav #nav-menu{
+      display: none;
+    }
+    body main{
+      width: 90%;
+    }
+
+  }
