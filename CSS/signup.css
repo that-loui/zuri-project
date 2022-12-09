@@ -1,203 +1,246 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    scroll-behavior: smooth;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #2c8579;
-  }
-  a:hover {
-    opacity: 50%;
-  }
-  
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  body {
-    width: 100%;
-  }
-  body header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 90px;
-    background-color: #222222;
-    color: #eaeaea;
-    padding: 10px;
-  }
-  body header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  body header .container #logo {
-    font-weight: bold;
-    font-size: 20px;
-    color: #eaeaea;
-    margin-left: 10px;
-  }
-  body header .container #main-nav {
-    margin: auto 30px;
-  }
-  body header .container #main-nav #nav-menu {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  body header .container #main-nav #nav-menu .nav-menu-item {
-    margin-right: 50px;
-  }
-  body header .container #main-nav #nav-menu .nav-menu-item a {
-    color: #eaeaea;
-  }
-  body header .container #main-nav #nav-menu .nav-menu-item .current {
-    background-color: #b9d6d2;
-    color: #2c8579;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 7px;
-  }
-  body header .container .sign-up {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  body header .container .sign-up a {
-    color: #eaeaea;
-    padding: 10px 15px;
-    border-radius: 7px;
-  }
-  body header .container .sign-up a:first-child {
-    border: 1px solid #eaeaea;
-    margin-right: 25px;
-  }
-  body header .container .sign-up a:last-child {
-    background-color: #2c8579;
-  }
-  body main {
-    width: 50%;
-    margin: 100px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 3px 3px 8px #dfedeb;
-    border: 3px solid #dfedeb;
-    border-radius: 10px;
-  }
-  body main form select, body main form input {
-    margin-bottom: 20px;
-    width: 320px;
-    padding: 5px 10px 5px 5px;
-    border: 1px solid;
-    border-radius: 5px;
-    color: rgb(217, 217, 217);
-    background-color: rgb(237, 237, 237);
-  }
-  body main h1 {
-    font-size: 30px;
-    font-weight: bold;
-    margin: 25px 0;
-    padding: 10px;
-    color: #222222;
-  }
-  body main .login {
-    margin-bottom: 0px;
-  }
-  body main h4 {
-    font-size: 20px;
-    color: #2c8579;
-    margin-bottom: 20px;
-  }
-  body main form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  body main form:first-child {
-    margin-top: 50px;
-  }
-  body main form label {
-    font-weight: bold;
-    align-self: flex-start;
-    margin-bottom: 5px;
-  }
-  body main form .terms-conds {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-  body main form .terms-conds div {
-    position: relative;
-    margin-right: 30px;
-  }
-  body main form .terms-conds div #terms {
-    width: 22px;
-    height: 22px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-  }
-  body main form .terms-conds div small {
-    margin-left: 30px;
-    font-size: 15px;
-  }
-  body main form #login, body main form #password-reset {
-    color: #eaeaea;
-    background-color: #256f65;
-    padding: 15px 0;
-    border-radius: 10px;
-  }
-  body main .extra-info {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-    max-width: 320px;
-    white-space: nowrap;
-  }
-  body main .extra-info #sign-in-p {
-    margin-right: 45px;
-  }
-  body main .extra-info #sign-up-p {
-    margin-right: 100px;
-  }
-  body main .extra-info a {
-    color: #2c8579;
-  }
-  body #forget {
-    padding: 80px 100px;
-  }
-  body #forget p {
-    width: 320px;
-    margin: 15px 0;
-  }
-  body footer {
-    width: 100%;
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #2c8579;
+
+}
+a:hover {
+  color: #b9d6d2;
+  opacity: 70%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  width: 100%;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  background-color: #222222;
+  color: #eaeaea;
+  padding: 10px;
+  width: 100%;
+}
+body header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .container #logo {
+  color: #eaeaea;
+}
+
+body header .container #main-nav {
+  margin: auto 30px;
+}
+body header .container #main-nav #nav-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .container #main-nav #nav-menu .nav-menu-item {
+  margin-right: 50px;
+}
+body header .container #main-nav #nav-menu .nav-menu-item a {
+  color: #eaeaea;
+}
+body header .container #main-nav #nav-menu .nav-menu-item .current {
+  background-color: #b9d6d2;
+  color: #2c8579;
+  font-weight: bold;
+  padding: 12px 18px;
+  border-radius: 7px;
+}
+body header .container .sign-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .container .sign-up a {
+  color: #eaeaea;
+  padding: 12px 18px;
+  border-radius: 7px;
+  white-space: nowrap;
+}
+body header .container .sign-up a:first-child {
+  border: 1px solid #eaeaea;
+  margin-right: 25px;
+}
+body header .container .sign-up a:last-child {
+  background-color: #2c8579;
+}
+body main {
+  width: 50%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 11px 11px 27px #dfedeb;
+  border: 3px solid #dfedeb;
+  border-radius: 10px;
+}
+ body main form input {
+  margin-bottom: 25px;
+  width: 320px;
+  padding: 5px 10px 5px 5px;
+  border: 1px solid;
+  border-radius: 5px;
+  color: rgb(217, 217, 217);
+  background-color: rgb(237, 237, 237);
+}
+body main h1 {
+  font-size: 30px;
+  margin: 30px 0;
+  padding: 10px;
+  color: #222222;
+  font-weight: bold;
+}
+body main .login {
+  margin-bottom: 0px;
+}
+body main h4 {
+  font-size: 25px;
+  color: #2f877b;
+  margin-bottom: 30px;
+  font-weight: 300px;
+}
+body main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+body main form:first-child {
+  margin-top: 50px;
+}
+body main form label {
+  font-weight: bold;
+  align-self: flex-start;
+  margin-bottom: 5px;
+}
+body main form .terms-conds {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+}
+body main form .terms-conds div {
+  position: relative;
+  margin-right: 30px;
+}
+body main form .terms-conds div #terms {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+body main form .terms-conds div small {
+  margin-left: 30px;
+  font-size: 15px;
+}
+body main form #login, body main form #password-reset {
+  color: #eaeaea;
+  background-color: #256f65;
+  padding: 12px 18px;
+  border-radius: 10px;
+}
+body main form #login:active, body main form #password-reset:active {
+  background-color: #95c2bc;
+}
+body main .extra-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  max-width: 320px;
+  white-space: nowrap;
+}
+body main .extra-info #sign-in-p {
+  margin-right: 45px;
+}
+body main .extra-info #sign-up-p {
+  margin-right: 100px;
+}
+body main .extra-info a {
+  color: #2c8579;
+}
+body #forget {
+  padding: 80px 100px;
+  border: 3px solid #dfedeb;
+  border-radius: 10px;
+}
+body #forget p {
+  width: 320px;
+  margin: 15px 0;
+}
+body footer {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
 
 
-  @media (max-width:768px){
+  @media (max-width:1000px){
+
+    header{
+      width: 100vw;
+    }
+
+    .container{
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    /* #logo{
+      margin-left: 10px;
+    } */
+
+    body header .container #logo img{
+      width:80px;
+      height:auto ;
+    }
+
+    body header .container #main-nav{
+      margin-right:10px ;
+    }
+
     body header .container #main-nav #nav-menu{
       display: none;
     }
+
+    body header .container .sign-up a{
+      white-space: nowrap;
+      padding: 9px 9px;
+    }
+    body header .container .sign-up a:first-child{
+      margin-right: 15px;
+    }
+
     body main{
-      width: 90%;
+      width: 100%;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
     }
 
   }
