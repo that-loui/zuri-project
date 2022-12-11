@@ -1,5 +1,124 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    display: flex;
+    padding-left: 5%;
+    padding-top: 20px;
+    background-color: rgb(34,34,34);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    padding: 8px;
+    color: rgb(234,234,234);
+}
+a:link {text-decoration: none;}
+.logo,.links {
+    padding-right: 150px;
+}
+.logo img {
+    width: 100px;
+}
+.navlinks {
+    padding: 10px;
+    margin-right: 30px;
+} 
+header .links a:hover {
+    opacity: 70%;
+} 
+#compare {
+    background-color: rgb(185,214,210);
+    border-radius: 10px;
+    color: rgb(79,153,143);
+    font-weight: bold;
+}
+.signout {
+    padding: 10px;
+    border: 1px solid rgb(234,234,234);
+    border-radius: 10px;
+}
+header .signout:hover {
+    color: rgb(1, 202, 202);
+    border: 1px solid rgb(1, 202, 202);
+}
+.profile {
+    padding: 0;
+    float: top;
+    margin-bottom: -20px;
+    margin-top: -20px;
+}
+.actions a {
+    color: rgb(34,34,34);
+    font: 12px;
+}
+.action {
+    display: flex;
+    width: 95%;
+    padding-left: 5%;
+    margin-top: 50px;
+}
+.action1, .action2, .action3, .action4, .action5, .action6, .action7, .action8, .action9, .action10 {
+    width: 8%;
+    border-radius: 20px;
+}
+.action1, .action2, .action3, .action4, .action5 {
+    margin-right: 50px;
+}
+.action5, .action6, .action7, .action8, .action9, .action10 {
+    margin-top: 20px;
+}
+.action1 {
+    margin-top: 5px;
+}
+.action7 {
+    margin-left: -10px;
+}
+.action button {
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+}
+.action button:hover {
+    border: 1px solid rgb(79,153,143);
+}
+.exceldocs {
+    display: flex;
+}
+.excel-doc1, .excel-doc2 {
+    width: 46%;
+    padding-left: 2%;
+    margin-bottom: 100px;
+}
+.file {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgb(79,153,143);
+    color: rgb(248,248,248);
+    margin-right: 5px;
+    border: none;
+}
+.sheet, .merged {
+    background-color: white;
+    color: rgb(79,153,143);
+    border: 1px solid rgb(79,153,143);
+    border-radius: 5px;
+    padding: 5px;
+}
+#sheets, #merged {
+    border: transparent;
+}
+.merged-files {
+    padding-left: 2%;
 }

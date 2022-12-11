@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/documentation.css">
+</head>
+<body>
+    <header class="header1">
+        <input type="checkbox" class="toggler">
+        <div class="ham-container">
+            <div class="ham-b"></div>
+        </div>
+        <ul class="logo">
+           <li><a href=""><img src="../IMG/Component 1@2x.png" alt="Quelea2"> </a></li> 
+        </ul>
+        <div class="menu">
+            <ul class="links">
+           <li><a href="" class="navlinks">Home</a></li> 
+           <li><a href="" class="navlinks">About</a></li>
+           <li><a href="" class="navlinks"id="documentation">Documentation</a></li> 
+           <li><a href="" class="navlinks">Contact</a></li> 
+        </ul>
+        <ul class="signup-profile">
+           <li><a href="sign-in.html" class="signin">Sign in</a></li>
+           <li><a href="sign-up.html" class="getstarted">Get Started</a></li> 
+        </ul>
+        </div>
+    </header>
+    <header class="header2">
+        <ul>
+            <li style="font-weight: bolder;">Welcome</li>
+            <li><a href="#overview" style="font-weight: bolder;">Overview</a></li>
+            <li><a href="#getting-started" style="font-weight: bolder;">Getting Started</a></li>
+            <li><a href="#comparisons" style="font-weight: bolder;">Comparisons</a>
+                <ul class="nestedlist">
+                    <li><a href="#simple-example">Simple Example</a></li>
+                    <li><a href="#creating-comparison">Creating Comparisons</a></li>
+                    <li><a href="#interpreting-response">Interpreting the response</a></li>
+                    <li><a href="#finishing-up">Finishing up</a></li>
+                </ul>
+            </li>
+            <li><a href="#security-auth"style="font-weight: bolder;">Security and Authentication</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="documentation">
+            <h1 style="font-weight: bolder;">Documentation</h1>
+            <div class="container">
+                <h5>Quelea2 is a leading tool for comparing Excel documents.</h5>
+                <ul class="">
+                    <li>From this page you can read about and explore the API.</li>
+                    <li>Logging in would allow you to compare, merge, store and download the excel files.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="overview" id="overview">
+            <h2 style="font-weight: bolder;">Overview</h2>
+            <p>
+                Quelea2 Excel Compare is an online platform for comparing Excel document. It accepts pair of
+                documents and returns a comparison viewer with the files displayed side by side.
+                The comparison viewer is embeddable, and displays a side-by-side or vertical comparison of the 
+                documents. The documents are displayed in their original format, with changes highlighted.
+            </p>
+        </section>
+        <hr>
+        <section class="getting-started" id="getting-started">
+            <h2 style="font-weight: bolder;">Getting Started</h2>
+            <p class="getting-startedp1">
+                To get started, <a href="">log in</a> or <a href="">create an account</a>. If you have a question or need help, <a href="">contact us</a> or email 
+                us at <a href="">support@quelea2.com</a>
+            </p>
+            <p class="getting-startedp2">
+                Once logged in, select the option to compare and you will be greeted with the comparison page.
+            </p>
+        </section>
+        <hr>
+        <section class="comparisons" id="comparisons">
+            <h2 style="font-weight: bolder;">Comparisons</h2>
+            <p class="comparisonsp1">Once in the comparison page, drag and drop your files to get started with the comparison process.</p>
+            <p class="comparisonsp2">
+                Each comparison has a dedicated viewer URL at <strong>/comparisons/viewer/{account_id}/{identifier}</strong> which
+                gives users a side-by-side comparison of the documents. It displays a loading animation while the 
+                comparison is being processed. See the <u><strong>comparison viewer</strong></u> reference for more information.
+            </p>
+        </section>
+        <hr>
+        <section class="simple-example" id="simple-example">
+            <h3 style="font-weight: bolder;">Simple Example</h3>
+            <p>Let's try submitting and viewing a comparison. Here's what you'll need;</p>
+            <ul>
+                <li>Access to a Quelea2 Excel Compare account.</li>
+                <li>At least two documents of excel or csv format to compare.</li>
+            </ul>
+            <div class="img">
+                <img src="../IMG/Frame 212.png" alt="" class="img11">
+                <img src="../IMG/Frame 208.png" alt="" class="img12">
+            </div>
+        </section>
+        <hr>
+        <section class="creating-comparison" id="creating-comparison">
+            <h3 style="font-weight: bolder;">Creating the Comparison</h3>
+            <p class="creating-comparisonp1">
+                To create a comparison, log in to your account, then, from the homepage, navigate to the 
+                comparison page to gain access to the workspace.
+            </p>
+            <p class="creating-comparisonp2"> Drag and drop your files into the fields provided and wait for the magic.</p>
+            <div class="img">
+                <img src="../IMG/Frame 212.png" alt="" class="img21">
+                <img src="../IMG/Frame 209.png" alt="" class="img22">
+            </div>
+        </section>
+        <hr>
+        <section class="interpreting-response" id="interpreting-response">
+            <h3 style="font-weight: bolder;">Interpreting the response</h3>
+            <p>Once the comparison is processed, you'll get a workspace editor similar to the excel editor. On it,
+                words will be highlighted to represent the common and conflicting words and phrases. You can then
+                choose to either delete the words, merge them or edit them.
+            </p>
+        </section>
+        <hr>
+        <section class="finishing-up" id="finishing-up">
+            <h3 style="font-weight: bolder;">Finishing up</h3>
+            <p class="finishing-upp1">
+                After choosing the actions to take on the file, you can either decide to download the resultantfile,
+                store it, or discard it. You can also decide to store one or both of the files being compared,
+                download one or both of the files being compoared or discard one of the files being compared.
+            </p>
+            <p class="finishing-upp2">Once discarded, they will be cleared from our database, making retrieval impossible.</p>
+        </section>
+        <hr>
+        <section class="security-auth" id="security-auth">
+            <h2 style="font-weight: bolder;">Security and Authentication</h2>
+            <p>All the comparisons are private by default, and require authorization to view. (You must explicitly mark
+                them as public, if you want to grant public access.)
+            </p>
+            <p>See the <u><strong>security and authentication</strong></u> reference for how your credentials are used, and how to display
+            private comparisons.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer1">
+           <div class="left">
+                <h4>Excel Compare</h4>
+                <p>
+                    Excel makes the pesky taks of file 
+                    manipulation and storage easy even for the oldest of senior citizens.
+                </p>
+                <img src="../IMG/Group 14.png" alt="">
+            </div>
+            <div class="mid">
+                <p><a href="index.html">Home</a></p><br>
+                <p><a href="index.html">About</a></p><br>
+                <p><a href="documentation.html">Documentation</a></p><br>
+                <p><a href="index.html">Contact</a></p>
+            </div>
+            <div class="right">
+                <p>ABC 123 STREET,</p><br>
+                <p>Location Area</p><br>
+                <p>01010101010</p><br>
+                <p>example@email.com</p>
+            </div>  
+        </div>
+        <div class="footer2">
+            <h5 class="privacy">Privacy Policy</h5>
+            <h5 class="copyright">Copyright Excel Compare 2022</h5>
+            <h5 class="terms">Terms and Conditions</h5>
+        </div>
+    </footer>
+</body>
+</html>
