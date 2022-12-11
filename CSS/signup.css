@@ -192,8 +192,6 @@ body main .extra-info a {
 }
 body #forget {
   padding: 80px 100px;
-  border: 3px solid #dfedeb;
-  border-radius: 10px;
 }
 body #forget p {
   width: 320px;
