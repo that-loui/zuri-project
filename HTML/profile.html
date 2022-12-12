@@ -1,26 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/profile.css">
-    <link rel="stylesheet" href="/CSS/reset.css">
-</head>
-<body>
-    <header>
-        <!--navbar-->
-    </header>
-    <main>
-        <!--sections-->
-    </main>
-    <footer>
-        <!--footer-->
-    </footer>
-    <script src="/JS/profile.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="profile.css" />
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="script.js"
+    ></script>
+    <title>Team_Quelea2 Profile Page</title>
+  </head>
+  <body>
+
+    <section class="navBar">
+      <div class="inNavBar">
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home" class="active">Logo</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks" class="menuHam">
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <a href="index.html" target="_blank" class="logo"><img src="/IMG/Component 1.svg"></a>
+        <nav class="navOne">
+          <button class="b1" type="button" href="#home">Home</button>
+          <button class="b2" type="button" href="#about">About</button>
+          <button class="b3" type="button" href="#documentation">
+            Documentation
+          </button>
+          <button class="b4" type="button" href="#contact">Contact</button>
+        </nav>
+        <nav class="navTwo">
+          <button class="b5" type="button">sign out</button>
+          <a href="" class="b6"><img src="" /></a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="mainPage">
+      <div class="proPic">
+        <img src="" />
+      </div>
+      <div class="details">
+        <h1>Alvin Makena</h1>
+        <h4>alvin.mk@email.com</h4>
+        <h3><img src="/IMG/crown.svg">Member since 11th November 2022</h3>
+        <button>Edit Profile</button>
+      </div>
+      <div class="vertLine"></div>
+      <div class="details2">
+        <h1>File Statistics</h1>
+        <div class="stats1">
+          <h3>Number of Files</h3>
+          <h3>2</h3>
+        </div>
+        <div class="stats2">
+          <h3>Number of Files Compared</h3>
+          <h3>4</h3>
+        </div>
+        <div class="stats3">
+          <h3>Number of Files Merged</h3>
+          <h3>0</h3>
+        </div>
+      </div>
+    </section>
+    <section class="infoPage">
+      <div class="infoArrange">
+        <div class="files">
+          <h2>Files</h2>
+          <a href=""><img src="/IMG/icons8-search.svg" width="30px"></a>
+        </div>
+        <hr />
+        <div class="topic1">
+          <h2>Introduction to UX Design</h2>
+          <!-- three dots -->
+          <ul class="dropbtn icons btn-right showLeft" onclick="showDropdown()">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <!-- menu -->
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <hr />
+        <div class="topic2">
+          <h2>Information Architecture for Dummies</h2>
+          <!-- three dots -->
+          <ul class="dropbtn icons btn-right showLeft" onclick="showDropdown()">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <!-- menu -->
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Hom</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <hr />
+        <div class="topic3">
+          <h2>Color Theory</h2>
+          <!-- three dots -->
+          <ul class="dropbtn icons btn-right showLeft" onclick="showDropdown()">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <!-- menu -->
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <hr />
+        <div class="topic4">
+          <h2>Prototype for UX Designers</h2>
+          <!-- three dots -->
+          <ul class="dropbtn icons btn-right showLeft" onclick="showDropdown()">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <!-- menu -->
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <hr />
+        <div class="topic5">
+          <h2>Gap Selling</h2>
+          <!-- three dots -->
+          <ul class="dropbtn icons btn-right showLeft" onclick="showDropdown()">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <!-- menu -->
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footArrange">
+        <div class="footer1">
+          <h1>Excel Compare</h1>
+          <h3>
+            Excel comp makes the pesky task of file <br />
+            manipulation and storage easy even <br />
+            for the oldest of clients.
+          </h3>
+
+          <a href=""><img  src="/IMG/Frame 40.svg" alt="Social media icons"></a>
+
+          <h2>Privacy Policy</h2>
+        </div>
+        <div class="footer2">
+          <h2>Home</h2>
+          <h3>About</h3>
+          <h3>Documentation</h3>
+          <h3>Contact</h3>
+          <h2>Copyright Excel Compare 2022</h2>
+        </div>
+        <div class="footer3">
+          <h2>ABC 123 STREET</h2>
+          <h3>Location Area</h3>
+          <h3>000000000000</h3>
+          <h3>example@email.com</h3>
+          <h2>Terms and Conditions</h2>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

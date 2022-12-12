@@ -1,0 +1,321 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap");
+
+
+:root {
+  --normal-font: 400;
+  --bold-font: 600;
+  --bolder-font: 900;
+  --dulltext-color: #d3d3d3;
+  --text-color: white;
+  --secoundary-color: #2C8579;
+  --secoundary-color2: #95C2BC;
+  --background-color: #000000;
+  --background-color2: #202020;
+  --line-height: 1.7rem;
+  --transition: 0.5s ease-in;
+  }
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  transition: var(--transition);
+  scroll-behavior: smooth;
+}
+
+
+.navBar {
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+a {
+    transition: color 0.5s ease-in-out;
+    text-decoration: none;
+    color: var(--dulltext-color);
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: Poppins, sans-serif;
+    letter-spacing: 2px;
+    margin-left: 80px;
+  }
+
+  .inNavBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .navOne {
+    margi: 0px 200px 0px 200px;
+  }
+
+  .b1, .b2, .b3, .b4, .b6 {
+    margin: 0px 50px 0px 50px;
+    background-color: var(--background-color);
+    color: var(--dulltext-color);
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border: 1px solid var(--background-color);
+    border-radius: 5px; 
+    padding: 6px 10px 6px 10px;
+    transition: 0.5s;
+    cursor: pointer; 
+  }
+  .b5 {
+    margin-right: 50px; 
+    background-color: var(--background-color);
+    color: var(--dulltext-color);
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border: 1px solid var(--dulltext-color);
+    border-radius: 5px; 
+    padding: 6px 10px 6px 10px;
+    transition: all 0.5s;
+    cursor: pointer;   
+  }
+  .b6 {
+    background-color: rgb(21, 120, 116);
+  }
+  .b7 > img {
+    display: none;
+  }
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  button:hover {
+    background-color: #82bfb8;
+    color: rgb(13, 124, 56);
+    font-weight: bold;
+  }
+  @media only screen and (max-width: 768px) {
+    .b7 > img {
+      background-color: var(--secoundary-color2);
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: block;
+    }
+    .menuTogg {
+      margin-bottom: 100px;
+    }
+  }
+
+
+  .mainPage {
+    padding: 10% 15% 10%;
+    background-color: var(--dulltext-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .mainPage {
+      display: flex;
+      flex-direction: column;
+      font-size: smaller;
+    }
+    .navOne, .navTwo {
+      display: none;
+    }
+    .navTwo > a > img {
+      background-color: var(--secoundary-color2);
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      border: none;
+      
+    }
+  }
+  .image1 > img {
+    width: 70%;
+    height: 60%;
+    border: none;
+  }
+  .logo > img {
+    width: 130px;
+  }
+
+  h1 {
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-family: Poppins, sans-serif;
+  }
+  h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: Poppins, sans-serif;
+  }
+  h3 {
+    font-size: 25px;
+    color:rgb(13, 124, 56);
+    letter-spacing: 1px;
+    font-family: Poppins, sans-serif;
+  }
+
+  img {
+    width: 50px;
+  }
+  h3 {
+    display: flex;
+  }
+  #menuToggle {
+    display: none;
+  }
+
+
+/* Todo Hamburger menu for T_Quelea2 */
+@media only screen and (max-width: 768px) {
+    #menuToggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: var(--background-color);
+  
+  transition: color 0.5s ease;
+}
+
+#menuToggle a:hover {
+  color: var(--secoundary-color);
+}
+
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: var(--dulltext-color);
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * Hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * The last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  width: 50px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 70px;
+  background: var(--secoundary-color2);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+/*
+ * Slides in from the left
+ */
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+}
+

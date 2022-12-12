@@ -7,23 +7,52 @@
     <title>Workspace</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/workspace.css">
+    <link rel="stylesheet" href="/CSS/reset.css">
 </head>
 <body>
-    <header>
-        <ul class="logo">
-           <li><a href="index.html"><img src="../IMG/Component 1@2x.png" alt="Quelea2"> </a></li> 
-        </ul>
-        <ul class="links">
-           <li><a href="index.html" class="navlinks">Home</a></li> 
-           <li><a href="compare.html" class="navlinks" id="compare">Compare</a></li>
-           <li><a href="documentation.html" class="navlinks">About</a></li>
-           <li><a href="documentation.html" class="navlinks">Documentation</a></li> 
-           <li><a href="" class="navlinks">Contact</a></li> 
-        </ul>
-        <ul class="signup-profile">
-           <li><a href="signout.html" class="signout">Sign out</a></li>
-           <li><a href="profile.html" class="profile"><img src="../IMG/circle.png" alt="profile" width="90px"></a></li> 
-        </ul>
+    <header class="signup-head">
+        
+        <div class="container">
+            <a href="landing.html" id="logo"><img src="../IMG/Component 1@2x.png" alt="company logo"></a>
+  
+            <nav id="main-nav">
+                <input type="checkbox" class="toggler">
+                <div class="ham-container">
+                    <div class="ham-b"></div>
+                </div>
+  
+                <ul id="nav-menu">
+  
+                    <li class="nav-menu-item">
+                        <a href="landing.html">Home</a>
+                    </li>
+                    <li class="nav-menu-item">
+                      <a href="#" class="current">Compare</a>
+                   </li>
+                    <li class="nav-menu-item">
+                        <a href="#">About</a>
+                    </li>
+  
+                    <li class="nav-menu-item">
+                        <a href="documentation.html">Documentation</a>
+                    </li>
+  
+                    <li class="nav-menu-item">
+                        <a href="#">Contact</a>
+                    </li>
+                    <li class="extra">
+                      <a href="savedworks.html" >Saved Works</a>
+                  </li>
+                    <li class="extra">
+                        <a href="#" >Sign Out</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sign-up">
+                <a href="#" id="signout">Sign Out</a>
+                <a href="profile.html" id="profile"><img src="../IMG/circle.png" alt="" width="100px"></a>
+            </div>
+        </div>
     </header>
     <main>
         <section class="actions">
@@ -60,6 +89,23 @@
                 </div>
             </div>
         </section>
+        <div class="dropdown">
+            <button class="dropdown-button">
+                Actions
+            </button>
+            <div class="dropdown-content">
+                <a href="">Highlight duplicates in a single file </a>
+                <a href="">Remove duplicates and return a single file</a>
+                <a href="">Remove duplicates and return 2 files</a>
+                <a href="">Highlight duplicates and return 2 files</a>
+                <a href="">Differences</a> 
+                <a href="">Print</a>
+                <a href="">Download</a>
+                <a href="">Save</a>
+                <a href="">Help</a>
+                <a href="">Share</a>s
+            </div>
+        </div>
         <section class="excel-space">
             <div class="exceldocs">
                 <div class="excel-doc1">

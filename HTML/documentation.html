@@ -7,27 +7,46 @@
     <title>Documentation</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/documentation.css">
+    <link rel="stylesheet" href="/CSS/reset.css">
 </head>
 <body>
-    <header class="header1">
-        <input type="checkbox" class="toggler">
-        <div class="ham-container">
-            <div class="ham-b"></div>
-        </div>
-        <ul class="logo">
-           <li><a href=""><img src="../IMG/Component 1@2x.png" alt="Quelea2"> </a></li> 
-        </ul>
-        <div class="menu">
-            <ul class="links">
-           <li><a href="" class="navlinks">Home</a></li> 
-           <li><a href="" class="navlinks">About</a></li>
-           <li><a href="" class="navlinks"id="documentation">Documentation</a></li> 
-           <li><a href="" class="navlinks">Contact</a></li> 
-        </ul>
-        <ul class="signup-profile">
-           <li><a href="sign-in.html" class="signin">Sign in</a></li>
-           <li><a href="sign-up.html" class="getstarted">Get Started</a></li> 
-        </ul>
+    <header class="signup-head">
+        
+        <div class="container">
+            <a href="landing.html" id="logo"><img src="../IMG/Component 1@2x.png" alt="company logo"></a>
+            <nav id="main-nav">
+                <input type="checkbox" class="toggler">
+                <div class="ham-container">
+                    <div class="ham-b"></div>
+                </div>
+                <ul id="nav-menu">
+
+                    <li class="nav-menu-item">
+                        <a href="landing.html" >Home</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a href="index.html">About</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a href="#"class="current">Documentation</a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a href="index.html">Contact</a>
+                    </li>
+                       
+                    <li class="extra">
+                        <a href="sign-up.html">Get Started</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sign-up">
+                <a href="sign-in.html" id="signin">Sign In</a>
+
+                <a href="sign-up.html" id="getstarted">Get Started</a>
+            </div>
         </div>
     </header>
     <header class="header2">
@@ -49,7 +68,7 @@
     <main>
         <section class="documentation">
             <h1 style="font-weight: bolder;">Documentation</h1>
-            <div class="container">
+            <div class="container1">
                 <h5>Quelea2 is a leading tool for comparing Excel documents.</h5>
                 <ul class="">
                     <li>From this page you can read about and explore the API.</li>

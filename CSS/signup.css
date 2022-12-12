@@ -85,6 +85,11 @@ body header .container .sign-up a:first-child {
   border: 1px solid #eaeaea;
   margin-right: 25px;
 }
+
+body header .container .sign-up a:first-child:hover {
+  border: 1px solid rgb(1, 202, 202);
+  opacity: 100%;
+}
 body header .container .sign-up a:last-child {
   background-color: #2c8579;
 }

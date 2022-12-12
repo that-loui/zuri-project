@@ -6,29 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/CSS/error.css">
-    <link rel="stylesheet" href="/CSS/reset.css">
-
-    <title>Error Page</title>
+    <title>Team_Quelea2 Error Page</title>
 </head>
 <body>
-    <section>
-        <div>
-            <nav>
-
+    <section class="navBar">
+        <div class="inNavBar">
+            <nav role="navigation" class="menuTogg">
+                <div id="menuToggle">
+                  <!--An hidden checkbox is used as click reciever,
+                  so you can use the :checked selector on it.-->
+                  <input type="checkbox" />
+                  
+                  <!--Some spans to act as a hamburger.-->
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                  <!--The menu has to be inside of the button-->
+                  <ul id="menu">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Info</li></a>
+                    <a href="#"><li>Contact</li></a>
+                  </ul>
+                </div>
             </nav>
-            <nav>
-
+            <a href="index.html" target="_blank" class="logo"><img src="/IMG/Component 1.svg"></a>
+            <nav class="navOne">
+                <button class="b1" type="button" href="#home">Home</button>
+                <button class="b2" type="button" href="#about">About</button>
+                <button class="b3" type="button" href="#documentation">Documentation</button>
+                <button class="b4" type="button" href="#contact">Contact</button>
             </nav>
+            <nav class="navTwo">
+                <button class="b5" type="button">sign in</button>
+                <button class="b6" type="button">Get Started</button>
+            </nav>
+            <a href="" class="b7"><img src="" /></a>
         </div>
     </section>
-    <section>
-        <div>
-
+    <section class="mainPage">
+        <div class="image1">
+            <img src="/img/amico.png" />
         </div>
-        <div>
-
+        <div class="content1">
+            <h1>Looks like you're lost</h1>
+            <h2>The page you're looking for is not available</h2>
+            <a href=""><h3><img src="/IMG/arrow-right.svg">
+                Go back home</h3></a>
         </div>
     </section>
-    <script src="/JS/error.js"></script>
 </body>
 </html>
