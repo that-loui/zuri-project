@@ -17,163 +17,245 @@
   --transition: 0.5s ease-in;
 }
 
-html,
-body {
+
+/* ! Trial codes for the navigatio;n bar */
+
+/* this is the style for the navigation  */
+
+* {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  transition: var(--transition);
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
-.navBar {
-    background-color: var(--background-color);
-    padding: 20px;
-}
-
 a {
-    transition: color 0.5s ease-in-out;
-    text-decoration: none;
-    color: var(--dulltext-color);
-    font-size: 20px;
-    font-weight: bolder;
-    font-family: Poppins, sans-serif;
-    letter-spacing: 2px;
-    margin-left: 2px;
-    align-items: baseline;
-  }
-
-  .inNavBar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  @media only screen and (min-width: 768px) {
-    .topnav {
-      display: none;
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    /* Style the navigation menu */
-.topnav {
-  overflow: hidden;
-  position: relative;
-  
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  display: none;
-}
-
-/* Style navigation menu links */
-.topnav a {
-  color: var(--dulltext-color);
-  padding: 10px;
   text-decoration: none;
-  font-size: 25px;
-  display: block;
+  color: #2c8579;
+
 }
-.menuHam > a {
-  font-size: 15px;
+a:hover {
+  color: #b9d6d2;
+  opacity: 70%;
 }
 
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: var(--background-color);
-  display: block;
-  position: absolute;
-  right: 10px;
-  top: 1px;
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
 
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: var(--secoundary-color2);
-  color: black;
+body {
+  width: 100%;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  background-color: #222222;
+  color: #eaeaea;
+  padding: 10px;
+  width: 100%;
+}
+body header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .container #logo {
+  color: #eaeaea;
 }
 
-/* Style the active link (or home/logo) */
-.active {
-  background-color: #04AA6D;
-  color: var(--secoundary-color2);
-  margin-left: 10px;
-  visibility: hidden;
+body header .container #logo img{
+  width: 120px;
 }
 
-.b1, .b2, .b3, .b4, .b5 {
+body header .container #main-nav {
+  margin: auto 30px;
+}
+body header .container #main-nav #nav-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggler{
   display: none;
 }
-.proPic > img {
-  width: 50px;
-}
+body header .container #main-nav #nav-menu .nav-menu-item {
+  margin-right: 50px;
 }
 
-  /* .navOne {
-    margin: 0px 200px 0px 200px;
-  } */
+.extra{
+  display: none;
+}
+body header .container #main-nav #nav-menu .nav-menu-item a {
+  color: #eaeaea;
+}
+body header .container #main-nav #nav-menu .nav-menu-item .current {
+  background-color: #b9d6d2;
+  color: #2c8579;
+  font-weight: bold;
+  padding: 12px 18px;
+  border-radius: 7px;
+}
+body header .container .sign-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  /* // these are for the buttons in the navBar */
-  .b1, .b2, .b3, .b4, .b6 {
-    margin: 0px 50px 0px 50px;
-    background-color: var(--background-color);
-    color: var(--dulltext-color);
-    font-family: Poppins, sans-serif;
-    font-size: 15px;
-    letter-spacing: 1px;
-    border: 1px solid var(--background-color);
-    border-radius: 5px; 
-    padding: 6px 10px 6px 10px;
-    transition: 0.5s;
-    cursor: pointer; 
+/* for those that have sign out and profile here you are too change only the style on the profile pic part  */
+body header .container .sign-up a {
+  color: #eaeaea;
+  padding: 12px 18px;
+  border-radius: 7px;
+  white-space: nowrap;
+}
+body header .container .sign-up a:first-child {
+  border: 1px solid #eaeaea;
+  margin-right: 25px;
+}
+
+body header .container .sign-up a:first-child:hover {
+  border: 1px solid rgb(1, 202, 202);
+  opacity: 100%;
+}
+
+/* this is the style for the profile/get started part  */
+body header .container .sign-up a:last-child {
+  background-color: #2c8579;
+}
+
+
+@media (max-width:768px){  
+  .sign-up a{
+      display: none;
   }
-  .b5 {
-    margin-right: 50px; 
-    background-color: var(--background-color);
-    color: var(--dulltext-color);
-    font-family: Poppins, sans-serif;
-    font-size: 15px;
-    letter-spacing: 1px;
-    border: 1px solid var(--dulltext-color);
-    border-radius: 5px; 
-    padding: 6px 10px 6px 10px;
-    transition: all 0.5s;
-    cursor: pointer;   
+  .toggler{
+      display: block;
+
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 2;
+
+      width: 60px;
+      height: 60px;
+
+      opacity: 0;
+
+      cursor: pointer;
   }
-  .navTwo > a > img {
-    background-color: var(--secoundary-color2);
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    border: none;
-    
+
+  .ham-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1;
+
+      height: 45px;
+      width: 45px;
+
+     
+      
   }
-  button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
+
+  .ham-b, 
+  .ham-b::before, 
+  .ham-b::after
+
+ {
+
+      display: block;
+
+      position: absolute;
+
+      background-color: whitesmoke;
+
+      height: 3px;
+      width: 35px;
+
+      border-radius: 2px;
+
+      transition: transform 0.4s ease-in-out;
   }
-  button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: 0px;
-    transition: 0.5s;
+
+  .ham-b::before{
+      content: '';
+      top: -8px;
   }
-  button:hover {
-    background-color: #82bfb8;
-    color: rgb(13, 124, 56);
-    font-weight: bold;
+
+  .ham-b::after{
+      content: '';
+      top: 8px;
   }
+
+  .toggler:checked + .ham-container .ham-b::before{
+      top: 0px;
+      transform: rotate(405deg);
+  }
+
+  .toggler:checked + .ham-container .ham-b{
+      background-color: rgba(255, 228, 196, 0);
+  }
+
+  .toggler:checked + .ham-container .ham-b::after{
+      top: 0px;
+      transform: rotate(-405deg);
+  }
+
+  #nav-menu{
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+      margin-top: 5rem;
+
+      /* background-color: gray; */
+      
+
+  }
+  .extra{
+      display: block;
+  }
+
+  #nav-menu li{
+      background-color: #222222;
+      width: 100%;
+      margin: auto;
+      opacity: 0;
+      text-align: center;
+      padding: 1rem;
+  }
+
+  #nav-menu li a{
+      color: orangered;
+  }
+  .toggler:checked ~ #nav-menu li{
+      opacity: 1;
+  }
+  .toggler:checked ~ #nav-menu li:last-child{
+      border-bottom: 0;
+  }
+
+
+}
+
+/* todo new trial css codes added ends here */
 
 
 
@@ -231,24 +313,24 @@ a {
   }
   .details > h1 {
     font-size: 35px;
-    font-family: Poppins,, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bolder;
     letter-spacing: 3px;
   }
   .details > h4 {
     font-size: 15px;
-    font-family: Poppins,, sans-serif;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
   }
   .details > h3 {
     font-size: 20px;
-    font-family: Poppins,, sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   .details > button {
     padding: 6px 10px 6px 10px;
     border-radius: 6px;
     border: none;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: var(--dulltext-color);
     background-color: var(--secoundary-color);
   }
@@ -266,13 +348,13 @@ a {
 
   .details2 > h1 {
     font-size: 20px;
-    font-family: Poppins,, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     letter-spacing: 3px;
   }
   .details2 > h3 {
     font-size: 15px;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     letter-spacing: 3px;
   }
