@@ -77,8 +77,6 @@
     justify-content: space-between;
     align-items: center;
   }
-
-  /* for those that have sign out and profile here you are too change only the style on the profile pic part  */
   body header .container .sign-up a {
     color: #eaeaea;
     padding: 12px 18px;
@@ -95,49 +93,44 @@
     color: rgb(1, 202, 202);
     opacity: 100%;
   }
-
-  /* this is the style for the profile/get started part  */
-  body header .container .sign-up a:last-child {
+   body header .container .sign-up a:last-child {
     margin-right: -50px;
   }
   .toggler {
     display: none;
     margin-right: 0;
   }
-.actions a {
-    color: rgb(34,34,34);
-    font: 12px;
-}
+  .actions {
+    width: 100%;
+  }
 .action {
-    display: flex;
-    width: 95%;
-    padding-left: 5%;
-    margin-top: 50px;
+  display: flex;
+  width: 95%;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-bottom: 30px;
 }
-.action1, .action2, .action3, .action4, .action5, .action6, .action7, .action8, .action9, .action10 {
-    width: 8%;
-    border-radius: 20px;
+.action1, .action2, .action3, .action4,.action5,.action6,.action7,.action8,.action9 {
+  width: 8%;
+  border-left: 1px solid rgb(154,154,154);
+  border-right: 1px solid rgb(198,198,198);
+  border-radius: 5px;
+  margin-left: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: rgb(248,248,248);
+  text-align: center;
 }
-.action1, .action2, .action3, .action4, .action5 {
-    margin-right: 50px;
+.action5, .action6, .action7, .action8, .action9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.action5, .action6, .action7, .action8, .action9, .action10 {
-    margin-top: 20px;
-}
-.action1 {
-    margin-top: 5px;
-}
-.action7 {
-    margin-left: -10px;
-}
-.action button {
-    padding: 5px;
-    border-radius: 20px;
-    border: none;
-    background-color: white;
-}
-.action button:hover {
-    border: 1px solid rgb(79,153,143);
+.action img {
+  padding: 10px;
+  margin-left: 25px;
 }
 .dropdown {
     display: none;
